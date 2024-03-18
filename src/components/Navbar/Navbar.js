@@ -14,9 +14,9 @@ const [menu,setMenu]=useState("shop");
     </div>
     <ul className='nav-menu'>
         <li onClick={()=>setMenu("shop")}><Link to='/' className='link'>Shop</Link>{menu==='shop'?<hr/>:<></>}</li>
-        <li onClick={()=>setMenu("mens")}><Link to='/mens'  className='link'>Men </Link>{menu==='mens'?<hr/>:<></>}</li>
-        <li onClick={()=>setMenu("womens")}><Link to='/womens'  className='link'>Women</Link> {menu==='womens'?<hr/>:<></>}</li>
-        <li onClick={()=>setMenu("kids")}><Link to='/kids'  className='link'>Kids</Link> {menu==='kids'?<hr/>:<></>}</li>
+        <li onClick={()=>setMenu("men")}><Link to='/men'  className='link'>Men </Link>{menu==='men'?<hr/>:<></>}</li>
+        <li onClick={()=>setMenu("women")}><Link to='/women'  className='link'>Women</Link> {menu==='women'?<hr/>:<></>}</li>
+        <li onClick={()=>setMenu("kid")}><Link to='/kid'  className='link'>Kid</Link> {menu==='kid'?<hr/>:<></>}</li>
     </ul>
     <div className='nav-login-cart'>
        <Link to='/login' className="link"><button>Login</button></Link> 
