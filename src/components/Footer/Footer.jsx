@@ -4,12 +4,13 @@ import footer_logo from '../assets/logo_big.png';
 import whats_app_ico from '../assets/whatsapp_icon.png';
 import pinterest_icon from '../assets/pintester_icon.png';
 import instagram_ico from '../assets/instagram_icon.png';
+import { Link } from 'react-router-dom';
 const Footer = () => {
   return (
     <div className='footer'>
     <div className='footer-logo'>
-        <img src={footer_logo} alt='footer logo'></img>
-        <p>SHOPPER</p>
+       <Link to='/' className='link' ><img src={footer_logo} alt='footer logo'></img></Link>
+       <Link to='/' className='link'><p>SHOPPER</p></Link> 
     </div>
     <ul className='footer-links-container'>
     <li >Company</li>

@@ -9,8 +9,8 @@ const [menu,setMenu]=useState("shop");
   return (
     <div className='navbar'>
     <div className='nav-logo'>
-        <img src={logo} alt='logo'></img>
-        <p>SHOPPER</p>
+        <Link to='/' className='link'><img src={logo} alt='logo'></img></Link>
+        <Link to='/' className='link'><p>SHOPPER</p></Link>
     </div>
     <ul className='nav-menu'>
         <li onClick={()=>setMenu("shop")}><Link to='/' className='link'>Shop</Link>{menu==='shop'?<hr/>:<></>}</li>
