@@ -6,6 +6,8 @@ import all_product from '../components/assets/all_product';
 
 
 import Productdisplay from '../components/ProductDisplay/Productdisplay';
+import DescriptionBox from '../components/DescriptionBox/DescriptionBox';
+import RelatedProducts from '../components/RelatedProducts/RelatedProducts';
 
 
 const Products = () => {
@@ -19,6 +21,8 @@ const Products = () => {
         <>
           <Breadcrum product={product} />
           <Productdisplay product={product} />
+          <DescriptionBox/>
+          <RelatedProducts/>
         </>
       ) : (
         <p>Product Not Found</p>
